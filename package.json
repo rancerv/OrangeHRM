@@ -1,0 +1,22 @@
+{
+  "name": "testcafe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rancerv/testcafe.git"
+  },
+  "author": "Rancer Ventura",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rancerv/testcafe/issues"
+  },
+  "homepage": "https://github.com/rancerv/testcafe#readme",
+  "dependencies": {
+    "testcafe": "^2.6.2"
+  }
+}

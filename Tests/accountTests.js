@@ -9,6 +9,7 @@ const wrongPassword = "123";
 const message = "Invalid credentials";
 const warningMessage = "Required";
 const dashboardMessage = "Dashboard";
+const loginTitle = "Login";
 
 fixture("Login")
     .page(url)
@@ -36,3 +37,11 @@ test("Log in - Login Wrong Password", async ()=> {
     await common.validateText(account.requiredUsernameWarning, warningMessage);
     await common.validateText(account.requiredPasswordWarning, warningMessage);
  });
+
+ test("Log out", async ()=> {
+    await account.login(userName, password);
+    await account.logout();
+    await common.validateText(account.loginTitle, loginTitle);
+ });
+
+ 

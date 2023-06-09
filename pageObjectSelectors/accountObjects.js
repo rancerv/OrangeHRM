@@ -12,6 +12,9 @@ class Account {
         this.loginValidation = Selector("#app div.oxd-layout span h6");
         this.requiredUsernameWarning = Selector("#app form div:nth-child(2) span");
         this.requiredPasswordWarning = Selector("#app div.orangehrm-login-slot form div:nth-child(3) span");
+        this.accountButton = Selector("#app div.oxd-layout header ul li span");
+        this.logoutButton = Selector("#app div.oxd-layout header li:nth-child(4) a");
+        this.loginTitle = Selector("#app h5");
     }
 
     async login(userName, password){
@@ -22,6 +25,11 @@ class Account {
 
     async emptyLogin(){
         await common.clickElement(this.loginButton);
+    }
+
+    async logout(){
+        await common.clickElement(this.accountButton);
+        await common.clickElement(this.logoutButton);
     }
 }
 
