@@ -17,13 +17,12 @@
     "url": "https://github.com/rancerv/testcafe/issues"
   },
   "homepage": "https://github.com/rancerv/testcafe#readme",
-  "dependencies": {
-    "testcafe": "^2.6.2"
-  },
   "devDependencies": {
     "eslint": "^8.43.0",
     "eslint-plugin-testcafe-community": "^2.0.0",
     "husky": "^8.0.3",
-    "lint-staged": "^13.2.2"
+    "lint-staged": "^13.2.2",
+    "testcafe": "^3.0.0",
+    "testcafe-reporter-xunit": "^2.2.2"
   }
 }
