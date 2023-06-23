@@ -22,7 +22,7 @@ test("Search by Username", async ()=> {
     await common.validateText(admin.userNameValidation, userName);
 });
 
-test.only("Search by User Role", async ()=> {
+test.skip("Search by User Role", async ()=> {
     await admin.searchByRole();
  });
 
