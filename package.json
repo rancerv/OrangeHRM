@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "testcafe chrome:headless OrangeHRM/Tests/**/* ",
+    "test": "testcafe chrome:headless C:/Users/r2vm/OneDrive/Escritorio/All/Code/Codes/TestCafe/OrangeHRM/Tests/*",
     "prepare": "husky install"
   },
   "repository": {
