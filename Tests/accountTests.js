@@ -10,6 +10,8 @@ const message = "Invalid credentials";
 const warningMessage = "Required";
 const dashboardMessage = "Dashboard";
 const loginTitle = "Login";
+const searchItem = "Admin";
+
 
 fixture("Login")
     .page(url)
@@ -42,6 +44,12 @@ test("Log in - Login Wrong Password", async ()=> {
     await account.login(userName, password);
     await account.logout();
     await common.validateText(account.loginTitle, loginTitle);
+ });
+
+ test("Search - known object", async ()=> {
+    await account.login(userName, password);
+    await account.searching(searchItem);
+    await common.validateText(account.adminButton, searchItem);
  });
 
  

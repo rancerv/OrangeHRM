@@ -15,6 +15,8 @@ class Account {
         this.accountButton = Selector("#app div.oxd-layout header ul li span");
         this.logoutButton = Selector("#app div.oxd-layout header li:nth-child(4) a");
         this.loginTitle = Selector("#app h5");
+        this.searchBar = Selector("#app div.oxd-layout nav input");
+        this.adminButton = Selector("#app nav div.oxd-sidepanel-body a");
     }
 
     async login(userName, password){
@@ -30,6 +32,10 @@ class Account {
     async logout(){
         await common.clickElement(this.accountButton);
         await common.clickElement(this.logoutButton);
+    }
+
+    async searching(searchItem){
+        await common.type(this.searchBar, searchItem);
     }
 }
 
